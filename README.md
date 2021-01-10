@@ -2,6 +2,12 @@
 
 i creating this is game for is in honor of *Richard Stallman*
 
+first You Need readchar lib
+
+```
+pip3 install readchar
+```
+
 how runn
 ========
 
