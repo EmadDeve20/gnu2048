@@ -3,8 +3,16 @@
 def this_is_record(score):
     """if this is score is new, is saving"""
     score = int(score)
-    database = open(".record",'r')
-    record = database.read()
+    try:
+        database = open(".record",'r')
+        record = database.read()
+    except:
+        file = open(".record" , "w")
+        file.write("0")
+        file.close()
+        database = open(".record",'r')
+        record = database.read()
+
 
     try:
         record = int(record)
@@ -28,5 +36,3 @@ def saving_record(score):
         database = open('.record','w')
         database.write(str(score))
 
-        
-        
