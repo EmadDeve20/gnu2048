@@ -13,7 +13,7 @@ from saver import saving_record
 import push_numbers as p
 import platform
 
-class player:
+class Player:
     """this is class can solve 2048 game"""
     def __init__(self):
         """crated numbers for player"""
@@ -67,9 +67,6 @@ class player:
     def playing_game(self):
         """i can be playing 2048 game :D"""
         controler(self.numbers)
-
-
-
-if __name__ == '__main__' :
-    player = player()
-    player.game_manager()
+#if __name__ == '__main__' :
+#    player = Player()
+#    player.game_manager()
