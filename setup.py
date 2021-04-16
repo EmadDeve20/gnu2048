@@ -8,7 +8,7 @@ ffile.close()
 
 setuptools.setup(
     name="gnu2048",
-    version="1.0.0",
+    version="1.0.2",
     author="EmadDeve20",
     license='GPLv3+',
     author_email="emaddeve20@gmail.com",
