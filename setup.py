@@ -14,7 +14,9 @@ setuptools.setup(
     author_email="emaddeve20@gmail.com",
     description="this is an open source 2048 game",
     long_description=long_description,
-    install_requires="readchar",
+    install_requires=[
+        "readchar"
+    ],
     long_description_content_type="text/markdown",
     url="https://github.com/EmadDeve20/gnu2048",
     zip_safe=False,
@@ -27,7 +29,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=["src"],
     python_requires=">=3.6",
 )
 
