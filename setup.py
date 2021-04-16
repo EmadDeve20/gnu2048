@@ -14,6 +14,7 @@ setuptools.setup(
     author_email="emaddeve20@gmail.com",
     description="this is an open source 2048 game",
     long_description=long_description,
+    install_requires="readchar=2.0.1",
     long_description_content_type="text/markdown",
     url="https://github.com/EmadDeve20/gnu2048",
     project_urls={
