@@ -1,10 +1,13 @@
 #!/bin/env python3
 
+
 import setuptools
+
 
 ffile = open("README.md", "r")
 long_description = ffile.read()
 ffile.close()
+
 
 setuptools.setup(
     name="gnu2048",
