@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/bin/env python
 
 from gnu2048.gnu2048 import Player
 
