@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/bin/env python
 
 """
 this is not completed!
@@ -15,15 +15,13 @@ import platform
 
 class Player:
     """this is class can solve 2048 game"""
-    def __init__(self):
+    def __init__(self, numbers = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]], \
+            nativ_numbers = [[],[],[],[]]):
         """crated numbers for player"""
         #we need this is numbers for showing and playing
-        self.numbers = [[0,0,0,0],
-                        [0,0,0,0],
-                        [0,0,0,0],
-                        [0,0,0,0]]
+        self.numbers = numbers
 
-        self.nativ_numbers = [[],[],[],[]]
+        self.nativ_numbers = nativ_numbers
         # matrix need double this function for first run
         brid_number(self.numbers)
         brid_number(self.numbers)
@@ -67,6 +65,6 @@ class Player:
     def playing_game(self):
         """i can be playing 2048 game :D"""
         controler(self.numbers)
-#if __name__ == '__main__' :
-#    player = Player()
-#    player.game_manager()
+if __name__ == '__main__' :
+    player = Player()
+    player.game_manager()
