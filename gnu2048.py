@@ -59,7 +59,7 @@ class Player:
 
     def print_score_and_record(self):
         """this function can printing score and record for player"""
-        print(f"Score: {self.score()} \t Record: {open('.record' , 'r').read()}")
+        print("\t" * 7, f"Score: {self.score()} \t Record: {open('.record' , 'r').read()}")
         
 
     def playing_game(self):

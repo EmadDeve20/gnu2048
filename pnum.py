@@ -58,6 +58,9 @@ def plist(numbers):
 
 def prmat(mat):
     """this is function can be priting matrix"""
+    print("\n" * 10)
     for i in range(len(mat)):
+        print("\t" * 7, end = "")
         plist(mat[i])
-        print("");reset()
+        print("")
+        reset()
